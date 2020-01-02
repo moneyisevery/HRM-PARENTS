@@ -33,4 +33,7 @@ public class BaseQuery {
     public void setPageSize(Integer pageSize) {
         this.pageSize = pageSize;
     }
+    public Integer getStart(){
+        return (pageSize-1)*pageSize;
+    }
 }
